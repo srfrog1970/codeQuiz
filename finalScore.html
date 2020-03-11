@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Title</title>
+    <title>Final Score</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -16,6 +16,7 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <script src="./finalScore.js"></script>
   </head>
   <body>
     <container>
@@ -24,9 +25,11 @@
         <p class="finalMessage"></p>
         <hr class="my-4" />
         <form id="frm1">
-          Enter Initials: <input type="text" name="fname" /><br />
+          Enter Initials: <input type="text" name="fname" id="initials" /><br />
         </form>
-        <a class="btn btn-primary btn-lg" href="#" role="button">Submit</a>
+        <a class="btn btn-primary btn-lg" id="submitBtn" href="#" role="button"
+          >Submit</a
+        >
       </div>
     </container>
     <!-- Optional JavaScript -->

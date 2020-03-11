@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Welcome</title>
+    <title>Final Results</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta
@@ -18,30 +18,34 @@
     />
   </head>
   <body>
-    <div class="container">
-      <row> </row>
-      <row>
+    <row>
+      <container>
         <div class="jumbotron text-center">
-          <h1 class="display-4">Code Quiz</h1>
+          <h1 class="display-4">Hi Scores</h1>
           <p class="lead">
-            Try to answer the following code-related questions within the time
-            limit. Keep in mind that incorrect answers will impact your scode
-            time by ten seconds.
+            List of the latest high scores.
           </p>
           <hr class="my-4" />
-          <p>
-            You will be given 60 seconds. Press the "Start" button when you are
-            ready
-          </p>
           <a
             class="btn btn-primary btn-lg"
-            href="quizQuestions.html"
+            id="goBack"
+            href="index.html"
             role="button"
-            >Start</a
+            >Go Back</a
           >
+          <a
+            class="btn btn-primary btn-lg"
+            id="clearScores"
+            href="#"
+            role="button"
+            >Clear Scores
+          </a>
         </div>
-      </row>
-    </div>
+      </container>
+    </row>
+    <row>
+      <div id="results" class="text-center"></div>
+    </row>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script

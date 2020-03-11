@@ -47,7 +47,6 @@ function loadQuestion() {
 
 function checkAnswer(ans) {
   //   console.log(currQuestion);
-  debugger;
   if (ans == currQuestion.answer) {
     console.log("Correct!");
     result.innerHTML = "Correct!";
@@ -65,7 +64,8 @@ function startTimer() {
     secondsLeftText.innerHTML = secondsLeft;
     secondsLeft -= 1;
     console.log(secondsLeft);
-    if (secondsLeft < 0) {
+    console.log(questionCount);
+    if (secondsLeft < 0 || questionCount == 3) {
       clearInterval(myVar);
       localStorage.setItem("finalScore", correctAnswers);
       location.replace("finalScore.html");
