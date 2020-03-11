@@ -1,15 +1,16 @@
-var answer1Text = document.querySelector("#submitBtn");
+var submitBtn = document.querySelector("#submitBtn");
 var initialsObj = document.querySelector("#initials");
 
-function submitBtn() {
+function loadInitials() {
   console.log(initialsObj);
   initials = initialsObj.value;
 
   if (initials) {
+    localStorage.setItem("initials", initials);
     localStorage.setItem("initials", initials);
   } else {
     alert("You must enter in your initials to be added");
   }
 }
 
-submitBtn.addEventListener("click", submitBtn());
+submitBtn.addEventListener("click", loadInitials);
